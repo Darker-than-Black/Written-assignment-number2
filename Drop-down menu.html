@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Drop-down menu</title>
+		<style type="text/css">
+			body {
+				box-sizing: border-box;
+			}
+			ul.menu li {
+				position: relative;
+			}
+
+			ul.menu .menu-top a,
+			ul.menu .menu-inside a {
+				color: #00f;
+			}
+
+			ul.menu,
+			ul.menu-inside {
+				list-style-type: none;
+				padding: 0;		
+			}
+
+			ul.menu-inside {
+				position: relative;
+				top: -999px;
+			}
+
+			ul.menu li.menu-top {
+				display: inline;
+				float: left;
+				margin: 0 1px 0 0;
+			}
+
+			ul.menu li.menu-top a {
+				padding: 3px 10px 4px; 
+				display: block;
+			}
+
+			ul.menu li.menu-top:hover .menu-inside {
+				display: block;
+				top: 0;
+			}
+
+			ul.menu .menu-inside a:hover {
+				background: rgba(28, 119, 255, 0.9);
+				color: white;
+			}
+
+			ul.menu .menu-inside a {
+				text-decoration: none;
+			} 
+
+			a[class="menu-top"]:hover {
+				border-top: 1px solid black;
+				border-right: 1px solid black;
+				border-left: 1px solid black;
+				border-radius: 5px 5px 0 0;
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<ul class="menu">
+				<li class="menu-top">
+					<a href="#" class="menu-top">Файл</a>
+					<ul class="menu-inside">
+						<li><a href="#">Новый</a></li>
+						<li><a href="#">Открыть</a></li>
+						<li><a href="#">Сохранить</a></li>
+						<li><a href="#">Закрыть</a></li>
+					</ul>
+				</li>
+				<li class="menu-top">
+					<a href="#" class="menu-top">Правка</a>
+					<ul class="menu-inside">
+						<li><a href="#">Вырезать</a></li>
+						<li><a href="#">Копировать</a></li>
+						<li><a href="#">Вставить</a></li>
+						<li><a href="#">Сохранить</a></li>
+					</ul>
+				</li>	
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Feedback</title>
+		<style type="text/css">
+			div.feedback {
+				height: 120px;
+				width: 320px;
+				position: fixed;
+				background-color: #404040;
+				color: white;
+				-webkit-transition: 2s;
+				-moz-transition: 2s;
+				-ms-transition: 2s;
+				-o-transition: 2s;
+				transition: 2s;
+				top: 100px;
+				left: -320px;
+			}
+
+			div.feedback img {
+				float: left;
+				margin: 0 10px 0 0;
+				height: 100px;
+				width: 100px;
+				margin: 8px;
+			}
+			div.feedback span {
+				transform: rotate(270deg);
+				position: absolute;
+				border-radius: 0 0 10px 10px;
+				padding: 3px 5px;
+				background-color: rgba(255, 204, 0, 1);
+				color: black;
+
+				width: 110px;
+				left: 272px;
+				top: 48px;
+			}
+
+			div.feedback p {
+				margin-top: 20px;
+			}
+
+			div.feedback:hover {
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="feedback">
+			<img src="http://htmlbook.ru/files/feedback.jpg">
+			<p>Если у вас возникли вопросы по этому коду, звоните мне по телефону: 5555-3298. Звонок платный.</p>
+			<span>Обратная связь</span>
+		</div>
+	</body>
+</html>
